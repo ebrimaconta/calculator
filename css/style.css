@@ -41,10 +41,6 @@ body {
 	color: #111;
 }
 
-.screen:focus {
-	outline: none;
-}
-
 .buttons {
 	width: 340px;
 	margin: 12px;

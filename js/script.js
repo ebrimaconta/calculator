@@ -3,7 +3,6 @@ $(document).ready(function(){
   function calculator(){
     var sum = "";
     var len;
-     var error =false;
     var inputVal = document.getElementById("screen");
     $(".buttons .digit").on('click', function() {
       var num = $(this).attr('value');
@@ -24,11 +23,9 @@ $(document).ready(function(){
       var errorlist = ["/","+",".","-","*"];
       if( errorlist.includes(operatorErr)||splitSum[0] == "/" ||splitSum[0] == "*"){
          $("#screen").html(sum + " E" );
-          error=true;
           setTimeout(function(){ 
               $("#screen").html(0);
-              sum = "";
-              error= false;     
+              sum = "";   
            }, 1000);
       } else{
       var total =  eval(sum);
@@ -43,7 +40,7 @@ $(document).ready(function(){
 
     $("#clear").on('click', function() {
        sum = "";
-        $("#screen").html(0);
+       $("#screen").html(0);
     });
 
     };
