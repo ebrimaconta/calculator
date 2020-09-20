@@ -1,0 +1,27 @@
+{
+  "name": "calculator-changes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwind build css/tailwind.css -o dist/style.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebrimaconta/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebrimaconta/calculator/issues"
+  },
+  "homepage": "https://github.com/ebrimaconta/calculator#readme",
+  "dependencies": {
+    "pug": "^3.0.0",
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2"
+  }
+}

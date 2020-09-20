@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+ head
+   title Hello, World!
+   link(rel='stylesheet' href='../dist/style.css')
+   link(rel='stylesheet' href='../css/style.css')
+ body
+   div.container
+     div(class='centered card')
+     div.calc-card
+      button#clear C
+      div(id='screen' class="screen") 0
+      div.buttons
+         each val in [7,8,9]
+           button(class='digit' value=val)= val
+         button.operator#divide /
+         each val in [4,5,6]
+           button(class='digit' value=val)= val
+         button.operator#multiply x
+         each val in [1,2,3]
+           button(class='digit' value=val)= val
+         button.operator#minus -
+         each val in [0,".","="]
+           button(class='digit' value=val)= val
+         button.operator#plus +
+   script( script='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+   script( script='js/script.js')
+          
+       
