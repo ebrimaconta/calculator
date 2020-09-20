@@ -4,13 +4,14 @@ html(lang='en')
    title Hello, World!
    link(rel='stylesheet' href='../dist/style.css')
    link(rel='stylesheet' href='../css/style.css')
+   media(name="viewport" content="width=device-width, initial-scale=1.0")/
  body
-   div.container
-     div(class='centered card')
-     div.calc-card
-      button#clear C
-      div(id='screen' class="screen") 0
-      div.buttons
+   div(class='flex w-full justify-center')
+      div(class=' w-full  bg-black my-10 h-screen flex ')
+        div
+          button#clear C
+          div(id='screen' class="screen") 0
+        div.buttons
          each val in [7,8,9]
            button(class='digit' value=val)= val
          button.operator#divide /
